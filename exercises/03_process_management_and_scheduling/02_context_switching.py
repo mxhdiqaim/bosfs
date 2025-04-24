@@ -1,3 +1,12 @@
+"""
+Explanation
+This code simulates a context switch in an operating system with a simple queue of processes
+
+It demonstrates saving the current process's state and switching to the next by rotating the list of processes
+
+This highlights the overhead in context switching and simulates the operation succinctly.
+"""
+
 # Simulate a queue of processes by their IDs
 process_queue = [1, 2, 3, 4, 5]
 # function to simulate context switching
@@ -14,3 +23,5 @@ def context_switch(current_process, process_queue):
 current_process = process_queue[0]
 context_switch(current_process, process_queue)
 context_switch(process_queue[0], process_queue)
+
+print(f"Current process queue: {process_queue}")
