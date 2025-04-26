@@ -1,3 +1,10 @@
+"""
+Explanation
+The function 'calculate_blocks' computes the total number of disk blocks needed for a given file size and block size
+
+It calculates how many complete blocks are required and adds an additional block if there is any remainder.
+"""
+
 def calculate_block(file_size, block_size):
     # Calculate the number of complete blocks
     complete_blocks = file_size // block_size
