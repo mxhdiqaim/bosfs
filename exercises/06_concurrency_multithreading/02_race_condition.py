@@ -32,3 +32,10 @@ threads = [threading.Thread(target=increment_safe, args=(lock,)) for _ in range(
 for t in threads: t.start()
 for t in threads: t.join()
 print("Counter with lock:", counter)
+
+"""
+Explanation
+This program demonstrates a race condition by incrementing a shared counter using multiple threads without synchronization, leading to inconsistent results
+
+It then resolves the race condition by synchronizing the operation with a mutex, ensuring that concurrent threads increment the counter consistently and correctly.
+"""
