@@ -5,7 +5,7 @@
 <![CDATA[]]>
 
 int init_module(void) {
-    //     Register the charracter device driver
+    // Register the charracter device driver
     printk(KERN_INFO "Loading Simple Device Driver\n");
 
     return 0;
@@ -26,4 +26,4 @@ void cleanup_module(void) {
 
     The 'printk' function logs messages to the kernel log buffer, similar to printf for kernel-space operations.
 
- */*/
+ */
